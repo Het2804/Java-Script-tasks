@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Root Calculator</title>
+</head>
+<body style="margin-left: 2%;">
+
+  <h1>Square Root Calculator</h1>
+
+  <label for="square">Enter a Number</label>
+  <input type="text" id="s" >
+
+  <button onclick="squarerootcalculator()">Calculate</button><br>
+
+  <p id="result"></p>
+
+  <script>
+  
+    function squarerootcalculator() {
+      var a = document.getElementById('s').value;
+    
+  var result= Math.sqrt(a)
+
+  document.getElementById('result').innerHTML = 'The square root of  '+  a + ' is: ' + result ;
+    }
+  </script>
+</body>
+</html>

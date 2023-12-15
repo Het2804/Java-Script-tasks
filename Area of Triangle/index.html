@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Of Triangle</title>
+</head>
+<body style="margin-left: 2%;">
+
+  <h1>Area Of Triangle</h1>
+
+  <label for="base">Enter Base of the Triangle:</label>
+  <input type="text" id="B" ><br><br>
+
+  <label for="height">Enter Height of the Triangle:</label>
+  <input type="text" id="H" ><br><br>
+
+  <button onclick="areaoftriangle()">Calculate</button>
+
+  
+  <p id="result">The Area Of Triangle is:</p>
+
+  <script>
+  
+    function areaoftriangle() {
+
+      var a = document.getElementById('B').value;
+      var b = document.getElementById('H').value;
+
+  var result= a*b/2
+
+     
+    
+     
+      document.getElementById('result').innerHTML = 'The Area Of Triangle is:' + result ;
+    }
+  </script>
+</body>
+</html>
